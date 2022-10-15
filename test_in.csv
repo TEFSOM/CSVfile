@@ -1,0 +1,25 @@
+date or something,,,
+some information,,,
+more information,,,
+time[s],ID,voltage[V],current[A]
+0,0xdeadbeef,2,0
+0.1,0xcafebabe,1.9,0.1
+0.2,0xdeadbeef,1.8,0.2
+0.3,0xcafebabe,1.7,0.3
+0.4,0xdeadbeef,1.6,0.4
+0.5,0xcafebabe,1.5,0.5
+0.6,0xdeadbeef,1.4,0.6
+0.7,0xcafebabe,1.3,0.7
+0.8,0xdeadbeef,1.2,0.8
+0.9,0xcafebabe,1.1,0.9
+1,0xdeadbeef,1,1
+1.1,0xcafebabe,0.9,1.1
+1.2,0xdeadbeef,0.8,1.2
+1.3,0xcafebabe,0.7,1.3
+1.4,0xdeadbeef,0.6,1.4
+1.5,0xcafebabe,0.5,1.5
+1.6,0xdeadbeef,0.4,1.6
+1.7,0xcafebabe,0.3,1.7
+1.8,0xdeadbeef,0.2,1.8
+1.9,0xcafebabe,0.1,1.9
+2,0xdeadbeef,0,2
