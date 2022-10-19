@@ -130,6 +130,7 @@ public:
 	
 	std::string GetLastHead(){ return heads.back(); };	//return the last of header lines	
 	std::string GetFileName(){ return filename; };
+	std::string Getline(){ return line; };
 
 	double GetValue(int Index)
 	{
@@ -214,7 +215,7 @@ public:
 	void PushHead(std::vector<std::string> ss){ for(auto i:ss){ heads.emplace_back(i); } LoadName(); };
 	void PushName(std::string s){ heads.back() += "," + s; names.emplace_back(s); };
 	
-	void WhiteHead(){ for(auto i:heads){ file << i << std::endl; } };
+	void WriteHead(){ for(auto i:heads){ file << i << std::endl; } };
 	
 	void LoadData(double d){ data.clear(); data.emplace_back(d); strs.clear(); strs.emplace_back(std::to_string(d)); };
 	void LoadData(std::vector<double> dd){ data = dd; strs.clear(); for(auto i:dd){ strs.emplace_back(std::to_string(i)); } };
@@ -236,7 +237,7 @@ public:
 	void PushStrs(std::string s){ strs.emplace_back(s); data.emplace_back(mystod(s)); };
 	void PushStrs(std::vector<std::string> ss){ for(auto i:ss){ strs.emplace_back(i); data.emplace_back(mystod(i)); } };	
 	
-	void WhiteLine(){ MakeLine(); file << line << std::endl; };
+	void WriteLine(){ MakeLine(); file << line << std::endl; };
 	
 	
 };
