@@ -213,7 +213,7 @@ public:
 	void LoadHead(std::vector<std::string> ss){ heads = ss; LoadName(); };
 	void PushHead(std::string s){ heads.emplace_back(s); LoadName(); };
 	void PushHead(std::vector<std::string> ss){ for(auto i:ss){ heads.emplace_back(i); } LoadName(); };
-	void PushName(std::string s){ heads.back() += "," + s; names.emplace_back(s); };
+	void PushName(std::string s){ if(heads.back().back()!=','){ heads.back() += ","; } heads.back() += s; names.emplace_back(s); };
 	
 	void WriteHead(){ for(auto i:heads){ file << i << std::endl; } };
 	
